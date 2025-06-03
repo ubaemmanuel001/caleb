@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igboanugo Emmanuel's Cyber Portfolio</title>
+    <style>
+        @font-face {
+            font-family: 'Orbitron';
+            src: url('fonts/orbitron-black.otf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Orbitron';
+            src: url('fonts/orbitron-bold.otf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section section-hero">
+        <div class="parallax-bg"></div>
+        <div class="content">
+            <img id="profile-img" src="media/profile_photo.jpg" alt="Igboanugo Emmanuel Profile">
+            <h1 class="glitch">Hey, I’m Igboanugo Emmanuel!</h1>
+            <p class="typewriter">Obsessed with crafting wild digital experiences.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Wizard who thrives on chaos, turning pixels into portals.</p>
+        </div>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section id="multimedia" class="section section-multimedia">
+        <div class="content">
+            <h2>Multimedia Vortex</h2>
+            <h3>Sound of Cackling Fire:</h3>
+            <audio controls>
+                <source src="media/intro_audio.mp3" type="audio/mpeg">
+                Your browser can’t handle this.
+            </audio>
+            <h3 style="margin-top: 50px;">A Glimpse of my video editing wonders:</h3>
+            <video controls width="400" height="300">
+                <source src="media/project_video.mp4" type="video/mp4">
+                Your browser is too tame.
+            </video>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-skills">
+        <div class="content">
+            <h2>My Skills</h2>
+            <div class="skill-spheres">
+                <div class="skill-sphere" data-skill="VideoEditing">Video Editing</div>
+                <div class="skill-sphere" data-skill="SEO">SEO</div>
+                <div class="skill-sphere" data-skill="WebDevelopment">Web Dev</div>
+                <div class="skill-sphere" data-skill="ContentCreation">Content</div>
+            </div>
+            <p id="skill-description">Click a sphere to unleash its magic!</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-projects">
+        <div class="content">
+            <h2>My Creations</h2>
+            <div id="projects-container"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© <span id="current-year"></span> Igboanugo Emmanuel. Chaos is my signature.</p>
+        <button id="themeToggle">Flip the Universe</button>
+    </footer>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/gsap/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
